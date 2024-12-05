@@ -1,0 +1,21 @@
+﻿<Window x:Class="ScreenSaver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" mc:Ignorable="d"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:l="clr-namespace:ScreenSaver" 
+        Topmost="True"
+        WindowStyle="ThreeDBorderWindow"
+        Title="ScreenSaver" 
+        Height="450" Width="800">
+    <Window.Resources>
+    <CubicEase x:Key="CubicEase" EasingMode="EaseInOut"/>
+</Window.Resources>
+    <Border Name="MainBorder" Background="Black">
+        <TextBlock Text="Screensaver"
+                   Foreground="Black"
+                   FontSize="35"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" />
+    </Border>
+</Window>
